@@ -24,9 +24,9 @@ Save these files as <tt>~/.vim/syntax/yeti.vim</tt> and
 <tt>~/.vim/ftplugin/yeti.vim</tt> accordingly, and add<br>
 <tt><b>au BufNewFile,BufRead *.yeti setlocal filetype=yeti ts=8 sw=4 sts=4 expandtab</b></tt><br>
 into your <tt>~/.vimrc</tt>.</li>
-<li><a href="http://groups.google.com/group/yeti-lang">Mailing list.</a>
-Not all features supported by compiler are currently documented,
-help can be asked from the mailing list. Also please report any bugs you find.
+<li>Help can be asked from the
+<a href="http://groups.google.com/group/yeti-lang">mailing list</a>.
+Also please report any bugs you find.
 </li>
 </ul>
 The goal of the Yeti is to have a clean and minimal expressive language on the JVM that allows functional style programming, has static type inference and interfaces well with Java code.
@@ -77,6 +77,8 @@ Mixed Java/Yeti build task enchasements.
 <li>Primitive array support.
 <li>Thread-local variable support in standard library.
 <li>Invoking yeti compiler from in-memory compiled yeti code works now.
+<li>Multiple Java classes can be imported using one import statement
+    (like <b>import java.io: File, FileInputStream;</b>).
 <li>Renamed asm3 library packages included in yeti.jar
 (to avoid conflicts with other asm library usage).
 <li>Optimize functions into simple static methods,
