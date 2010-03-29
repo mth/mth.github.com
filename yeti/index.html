@@ -48,6 +48,7 @@ with string field foo will be good enough.</li>
 <li>Easy to <a href="http://linux.ee/~mzz/yeti/intro.html#using-java-classes-from-yeti-code">call existing Java code</a></li>
 <li>Interactive <a href="http://linux.ee/~mzz/yeti/intro.html#interactive-evaluation">REPL environment</a> for experimenting</li>
 <li>Compiles directly to Java bytecode</li>
+<li>Fast compilation and quite fast execution</li>
 </ul>
 More information will be probably available at future - the language
 is still in the development, but existing language syntax shouldn't change
@@ -73,17 +74,17 @@ recursive type definitions.
 Mixed Java/Yeti build task enchasements.
 <p>
 4/2010. Bugfixes, like always. New features:<ul>
-<li>Verify regex constants at compile time.
-<li>Thread-local variable support in standard library.
-<li>Invoking Yeti compiler from in-memory compiled Yeti code works now.
+<li>Verify regex constants at compile time.</li>
+<li>Thread-local variable support in standard library.</li>
+<li>Invoking Yeti compiler from in-memory compiled Yeti code works now.</li>
 <li>Multiple Java classes can be imported from a package using one import
-statement (like <tt>import java.io: File, FileInputStream;</tt>).
+statement (like <tt>import java.io: File, FileInputStream;</tt>).</li>
 <li>Renamed asm3 library packages included in yeti.jar
-(to avoid conflicts with other asm library usage).
+(to avoid conflicts with other asm library usage).</li>
 <li>Optimize functions into simple static methods,
-if there are no other references than full application.
+if there are no other references than full application.</li>
 <li>Mixed Yeti/Java source compilation in Yeti compiler,
-supports circular references between Yeti and Java source files.
+supports circular references between Yeti and Java source files.</li>
 </ul>
 Better type mismatch error messages and documentation generation
 from comments are partially implemented (means doesn't work yet).
