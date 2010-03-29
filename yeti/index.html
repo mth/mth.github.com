@@ -47,11 +47,14 @@ with string field foo will be good enough.</li>
 <li>Compiles directly to Java bytecode</li>
 </ul>
 More information will be probably available at future - the language
-is still in the development, although existing syntax should be stable.
-There is a plan to add <a href="http://github.com/mth/yeti/tree/master/doc/macros.rst">macro support </a>
-and standard library (especially the io module) needs work (and documentation).
-Those who are brave, may try it now. It is quite usable already, but sure it
-contains undiscovered bugs.
+is still in the development, but existing language syntax shouldn't change
+anymore.
+Standard library (especially the io module) needs work (and documentation).
+It is quite usable already, but sure it contains undiscovered bugs.
+Not all features supported by compiler are currently documented,
+help can be asked from the mailing list. Also please report any bugs you find.
+There is also a plan to add <a href="http://github.com/mth/yeti/tree/master/doc/macros.rst">macro support</a>, but it isn't going to happen before
+version 1.0 is released.
 <h3>Updates...</h3>
 9/2008. Some bugfixes here and there have happened (you can read the git log).
 Java classes are probably next thing to be implemented
@@ -67,6 +70,21 @@ recursive type definitions.
 <p>
 08/2009. Bugfixes, case pattern matching should work now better.
 Mixed Java/Yeti build task enchasements.
+<p>
+04/2009. Bugfixes, like always. New features:<ul>
+<li>Verify regex constants at compile time.
+<li>Primitive array support.
+<li>Thread-local variable support in standard library.
+<li>Invoking yetic from in-memory compiled yeti code works now.
+<li>Renamed asm3 library packages included in yeti.jar
+(to avoid conflicts with other asm library usage).
+<li>Optimize functions into simple static methods,
+if there are no other references than full application.
+<li>Mixed Yeti/Java source compilation in Yeti compiler,
+supports circular references between Yeti and Java source files.
+</ul>
+Better type mismatch error messages and documentation generation
+from comments are partially implemented (doesn't work yet).
 <hr>
 <p align="right"><img src="../any.gif">
 <br><small>(put yeti into subject)</small></p>
