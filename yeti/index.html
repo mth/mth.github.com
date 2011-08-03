@@ -55,14 +55,17 @@ with string field foo will be good enough.</li>
 <li>Compiles directly to Java bytecode</li>
 <li>Fast compilation and quite fast execution</li>
 </ul>
-More information will be probably available at future - the language
-is still in the development, but existing language syntax shouldn't change
-anymore.
-Standard library (especially the io module) needs work (and documentation).
-It is quite usable already, but sure it contains undiscovered bugs.
-There is also a plan to add <a href="http://github.com/mth/yeti/tree/master/doc/macros.rst">macro support</a>, but it isn't going to happen before
-version 1.0 is released.
-<h3>Updates...</h3>
+
+<h3>Status</h3>
+
+The core language and existing standard library API should be fairly
+stable now, the development focus is currently on fixing bugs when
+someone finds those and getting the documentation generator done
+(including generating documentation for modules with complex type
+signatures), as generating generating standard library documentation
+depends on that, and that has to be done before 1.0 release can be done.
+
+<h3>Updates</h3>
 
 4/2011. Bunch of bugfixes and some new features:<ul>
 <li>Faster structures and structure related bugfixes.
