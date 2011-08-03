@@ -12,7 +12,9 @@ functional programming language, that runs on the
 <a href="http://java.sun.com/docs/books/jvms/second_edition/html/VMSpecTOC.doc.html">JVM</a>.
 <ul>
 <li>Binary jar archive: <a href="http://linux.ee/~mzz/yeti/yeti.jar">yeti.jar</a><br>
-(occasionally updated and built from development snapshots)</li>
+(occasionally updated and built from development snapshots).<p>
+Binary jar containing only Yeti standard library:
+<a href="http://linux.ee/~mzz/yeti/yeti-lib.jar">yeti-lib.jar</a><br></li>
 <li><a href="https://github.com/mth/yeti">Source</a> is available through git and svn (ant is needed for building):<br>
 <tt><b>git clone git://github.com/mth/yeti.git</b></tt><br>
 <tt><b>svn co http://svn.github.com/mth/yeti.git</b></tt><br>
@@ -61,22 +63,22 @@ It is quite usable already, but sure it contains undiscovered bugs.
 There is also a plan to add <a href="http://github.com/mth/yeti/tree/master/doc/macros.rst">macro support</a>, but it isn't going to happen before
 version 1.0 is released.
 <h3>Updates...</h3>
-9/2008. Some bugfixes here and there have happened (you can read the git log).
-Java classes are probably next thing to be implemented
-(actually the syntax is decided and parser support already exists).<p>
-10/2008. <a href="http://linux.ee/~mzz/yeti/intro.html#defining-java-classes-in-yeti-code">Java class definitions</a> are
-supported now. Additionally bunch of bugfixes and optimisations have been done.
-<p>
-12/2008. Some bugfixes and .[] can now be used for accessing Java array
-elements too. Also added some smart auto-casting for Java arrays.
-<p>
-5/2009. Some bugfixes, allowed partial variant match in case,
-recursive type definitions.
-<p>
-8/2009. Bugfixes, case pattern matching should work now better.
-Mixed Java/Yeti build task enchasements.
-<p>
-4/2010. Bugfixes, like always. New features:<ul>
+
+4/2011. Bunch of bugfixes and some new features:<ul>
+<li>Faster structures and structure related bugfixes.
+The with operator allows extending existing structure object with additional
+fields and/or overriding fields in the original. This can be used among other
+things to do prototype style OO (and based on that also to emulate
+class-based OO). Should write a HOWTO about that. ;)</li>
+<li>Few additional constant optimisations.</li>
+<li>Triple-quoted strings for longer string templates.</li>
+<li>Some new documentation by Christian Essl.</li>
+<li>Emacs syntax hilighting by Brian McKenna.</li>
+<li>Some work on yetidoc support in the compiler
+(not here yet, but closer).</li>
+</ul>
+
+<p>4/2010. Bugfixes, like always. New features:<ul>
 <li>Verify regex constants at compile time.</li>
 <li>Thread-local variable support in standard library.</li>
 <li>Invoking Yeti compiler from in-memory compiled Yeti code works now.</li>
@@ -91,21 +93,22 @@ supports circular references between Yeti and Java source files.</li>
 </ul>
 Better type mismatch error messages and documentation generation
 from comments are partially implemented (means doesn't work yet).
-<p>
-4/2011. Bunch of bugfixes and some new features:<ul>
-<li>Faster structures and structure related bugfixes.
-The with operator allows extending existing structure object with additional
-fields and/or overriding fields in the original. This can be used among other
-things to do prototype style OO (and based on that also to emulate
-class-based OO). Should write a HOWTO about that. ;)</li>
-<li>Few additional constant optimisations.</li>
-<li>Triple-quoted strings for longer string templates.</li>
-<li>Some new documentation by Christian Essl.</li>
-<li>Emacs syntax hilighting by Brian McKenna.</li>
-<li>Some work on yetidoc support in the compiler
-(not here yet, but closer).</li>
-</ul>
-<hr>
+
+<p>8/2009. Bugfixes, case pattern matching should work now better.
+Mixed Java/Yeti build task enchasements.
+
+<p>5/2009. Some bugfixes, allowed partial variant match in case,
+recursive type definitions.
+
+<p>12/2008. Some bugfixes and .[] can now be used for accessing Java array
+elements too. Also added some smart auto-casting for Java arrays.
+
+<p>10/2008. <a href="http://linux.ee/~mzz/yeti/intro.html#defining-java-classes-in-yeti-code">Java class definitions</a> are
+supported now. Additionally bunch of bugfixes and optimisations have been done.
+
+<p>9/2008. Some bugfixes here and there have happened (you can read the git log).
+Java classes are probably next thing to be implemented
+(actually the syntax is decided and parser support already exists).<hr>
 <p align="right"><img src="../any.gif">
 <br><small>(put yeti into subject)</small></p>
 </body>
