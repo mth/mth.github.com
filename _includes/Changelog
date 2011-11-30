@@ -8,13 +8,13 @@ released
 * Improved deep struct/variant mismatch error messages - only parts
   of outer structures/variants relevant to the type mismatch are shown,
   which makes it easier to spot the actual problem.
-* New <tt>argument |&gt; function</tt> application operator similar
+* New ``argument |&gt; function`` application operator similar
   to the one found in F#, so applications can be expressed as piping data
   through functions.
-* The string concatenation operator <tt>\^</tt> now requires the arguments
+* The string concatenation operator ``^`` now requires the arguments
   to really be strings to catch more errors. You can always embed expressions
-  into string literals like <tt>"\\(a)\\(b)"</tt> to get a result equivalent to
-  the old behaviour of <tt>\^</tt> operator.
+  into string literals like ``"\(a)\(b)"`` to get a result equivalent to
+  the old behaviour of ``^`` operator.
 * Temporary fix for Win32 paths in compilation.
 * Fix circular dependencies between initialisation of modules and Java
   classes in those modules.
@@ -50,7 +50,7 @@ Main changes and bugfixes since last update:
   in the code. Additionally typedefs are now shown in -type and -doc output.
 * Module type not fully defined message shows the offending type variables.
 * Support super references in Java classes defined in Yeti code.
-* Support module deprecation (<tt><b>module</b> foo: <b>deprecated</b>;</tt>).
+* Support module deprecation (<code><b>module</b> foo: <b>deprecated</b>;</code>).
 * Require typedef names to start with lower-case letter to avoid
   conflict with variant constructors (you couldn't anyway use a
   type whose name started with upper-case letter).
@@ -83,7 +83,7 @@ Main changes and bugfixes since last update:
 * Thread-local variable support in standard library.
 * Invoking Yeti compiler from in-memory compiled Yeti code works now.
 * Multiple Java classes can be imported from a package using one import
-  statement (like <tt>import java.io: File, FileInputStream;</tt>).
+  statement (like ``import java.io: File, FileInputStream;``).
 * Renamed asm3 library packages included in yeti.jar
   (to avoid conflicts with other asm library usage).
 * Optimize functions into simple static methods,
