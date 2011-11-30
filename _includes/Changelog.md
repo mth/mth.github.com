@@ -1,8 +1,3 @@
----
-layout: default
-title: Changelog
----
-
 11/2011. <a href="https://github.com/mth/yeti/tree/v0.9.2">Version 0.9.2</a>
 released
 (<a href="http://linux.ee/~mzz/yeti/0.9/yeti-0.9.2.jar">yeti-0.9.2.jar</a> and
