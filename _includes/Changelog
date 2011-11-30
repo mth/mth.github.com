@@ -8,7 +8,7 @@ released
 * Improved deep struct/variant mismatch error messages - only parts
   of outer structures/variants relevant to the type mismatch are shown,
   which makes it easier to spot the actual problem.
-* New ``argument |&gt; function`` application operator similar
+* New ``argument |> function`` application operator similar
   to the one found in F#, so applications can be expressed as piping data
   through functions.
 * The string concatenation operator ``^`` now requires the arguments
