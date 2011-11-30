@@ -1,7 +1,7 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html><head>
-<title>Yeti programming language</title>
-</head><body>
+---
+layout: default
+title: Yeti programming language
+---
 <p>
 <table width="100%" border=0><tr><td><h1>Yeti</h1></td>
 <td align=right valign=top><small><i>... and the slime became the worm and the worm the serpent, <br>the serpent became the yeti of the mountain forests and the yeti became man.</i></small></td></tr></table>
@@ -65,118 +65,11 @@ signatures), as generating standard library documentation depends
 on that, and the documentation is needed for the 1.0 release.
 
 <h3>Updates</h3>
-11/2011. <a href="https://github.com/mth/yeti/tree/v0.9.2">Version 0.9.2</a>
-released
-(<a href="http://linux.ee/~mzz/yeti/0.9/yeti-0.9.2.jar">yeti-0.9.2.jar</a> and
-<a href="http://linux.ee/~mzz/yeti/0.9/yeti-lib-0.9.2.jar">yeti-lib-0.9.2.jar</a>).
-<ul>
-<li>YetiDoc support. Give -doc dir command line option or docdir="..."
-to ant task to generate module documentation automatically.
-<li>Improved deep struct/variant mismatch error messages - only parts
-of outer structures/variants relevant to the type mismatch are shown,
-which makes it easier to spot the actual problem.
-<li>New <tt>argument |&gt; function</tt> application operator similar
-to the one found in F#, so applications can be expressed as piping data
-through functions.
-<li>The string concatenation operator <tt>^</tt> now requires the arguments
-to really be strings to catch more errors. You can always embed expressions
-into string literals like <tt>"\(a)\(b)"</tt> to get a result equivalent to
-the old behaviour of <tt>^</tt> operator.
-<li>Temporary fix for Win32 paths in compilation.
-<li>Fix circular dependencies between initialisation of modules and Java
-classes in those modules.
-<li>Fix loop closure scoping (each loop iteration creates new closure).
-<li>Fix optimised non-value function references in class closures.
-<li>Old http module removed.
-</ul>
-
-9/2011. <a href="https://github.com/mth/yeti/tree/v0.9.1">Version 0.9.1</a>
-bugfix release
-(<a href="http://linux.ee/~mzz/yeti/0.9/yeti-0.9.1.jar">yeti-0.9.1.jar</a> and
-<a href="http://linux.ee/~mzz/yeti/0.9/yeti-lib-0.9.1.jar">yeti-lib-0.9.1.jar</a>).
-<ul>
-<li>Less/greater list/array cross-comparisions fixed.
-<li>Class-cast exception when constructing
-Java class closures of method-optimised function bindings fixed.
-<li>Typing errors on hidden struct depth type variables fixed.
-<li>Old repl module removed.
-</ul>
-
-8/2011. <a href="https://github.com/mth/yeti/tree/c1cb0b96a56d89e2d7e0f5a5da356217ab0b40d7">Version 0.9</a> released
-(<a href="http://linux.ee/~mzz/yeti/0.9/yeti-0.9.jar">yeti-0.9.jar</a> and
-<a href="http://linux.ee/~mzz/yeti/0.9/yeti-lib-0.9.jar">yeti-lib-0.9.jar</a>).
-<p>You should probably still use the development snapshots to get latest
-bug fixes, unless you need that nothing changes.
-Main changes and bugfixes since last update:<ul>
-<li>Using relaxed value restriction (sometimes it's safe to allow
-application result to be polymorphic).
-<li>New yeti.lang.compiler.eval module replaces the old repl module.
-<li>Typedefs are used when printing type names in error messages (and it's
-also useful for yetidoc). This should improve readability of type error
-messages involving complex types, given that matching typedefs exist
-in the code. Additionally typedefs are now shown in -type and -doc output.
-<li>Module type not fully defined message shows the offending type variables.
-<li>Support super references in Java classes defined in Yeti code.
-<li>Support module deprecation (<tt><b>module</b> foo: <b>deprecated</b>;</tt>).
-<li>Require typedef names to start with lower-case letter to avoid
-conflict with variant constructors (you couldn't anyway use a
-type whose name started with upper-case letter).
-<li>More constant value optimisations (static fields, constant bindings
-in some closures).
-<li>Fix duplicate field naming errors.
-<li>Fix serialVersionUID declaration in classes.
-<li>Fix primitive array autoconversions.
-<li>Yeti string can be used now where ~java.lang.CharSequence is required.
-<li>Standard library fixes.
-<li>The yeti.http module is deprecated,
-and openTextUrl function is merged into yeti.lang.io module.
-</ul>
-
-<p>4/2011. Bunch of bugfixes and some new features:<ul>
-<li>Faster structures and structure related bugfixes.
-The with operator allows extending existing structure object with additional
-fields and/or overriding fields in the original. This can be used among other
-things to do prototype style OO (and based on that also to emulate
-class-based OO). Should write a HOWTO about that. ;)
-<li>Few additional constant optimisations.
-<li>Triple-quoted strings for longer string templates.
-<li>Some new documentation by Christian Essl.
-<li>Emacs syntax hilighting by Brian McKenna.
-<li>Some work on yetidoc support in the compiler
-(not here yet, but closer).
-</ul>
-
-<p>4/2010. Bugfixes, like always. New features:<ul>
-<li>Verify regex constants at compile time.
-<li>Thread-local variable support in standard library.
-<li>Invoking Yeti compiler from in-memory compiled Yeti code works now.
-<li>Multiple Java classes can be imported from a package using one import
-statement (like <tt>import java.io: File, FileInputStream;</tt>).
-<li>Renamed asm3 library packages included in yeti.jar
-(to avoid conflicts with other asm library usage).
-<li>Optimize functions into simple static methods,
-if there are no other references than full application.
-<li>Mixed Yeti/Java source compilation in Yeti compiler,
-supports circular references between Yeti and Java source files.
-</ul>
-Better type mismatch error messages and documentation generation
-from comments are partially implemented (means doesn't work yet).
-
-<p>8/2009. Bugfixes, case pattern matching should work now better.
-Mixed Java/Yeti build task enchasements.
-
-<p>5/2009. Some bugfixes, allowed partial variant match in case,
-recursive type definitions.
-
-<p>12/2008. Some bugfixes and .[] can now be used for accessing Java array
-elements too. Also added some smart auto-casting for Java arrays.
-
-<p>10/2008. <a href="http://linux.ee/~mzz/yeti/intro.html#defining-java-classes-in-yeti-code">Java class definitions</a> are
-supported now. Additionally bunch of bugfixes and optimisations have been done.
-
-<p>9/2008. Some bugfixes here and there have happened (you can read the git log).
-Java classes are probably next thing to be implemented
-(actually the syntax is decided and parser support already exists).<hr>
+{% capture changelog %}
+{% include Changelog.md %}
+{% endcapture %}
+{{ changelog | markdownify }}
+<hr>
 <p align="right"><img src="../any.gif">
 <br><small>(put yeti into subject)</small></p>
 </body>
