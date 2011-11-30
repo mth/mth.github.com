@@ -2,5 +2,8 @@
 layout: default
 ---
 <div>
+{% capture changelog %}
 {% include Changelog.md %}
+{% endcapture %}
+{{ changelog | markdownify }}
 </div>
