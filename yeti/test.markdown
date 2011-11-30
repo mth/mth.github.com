@@ -2,6 +2,7 @@
 released
 (<a href="http://linux.ee/~mzz/yeti/0.9/yeti-0.9.2.jar">yeti-0.9.2.jar</a> and
 <a href="http://linux.ee/~mzz/yeti/0.9/yeti-lib-0.9.2.jar">yeti-lib-0.9.2.jar</a>).
+
 * YetiDoc support. Give -doc dir command line option or docdir="..."
   to ant task to generate module documentation automatically.
 * Improved deep struct/variant mismatch error messages - only parts
@@ -25,6 +26,7 @@ released
 bugfix release
 (<a href="http://linux.ee/~mzz/yeti/0.9/yeti-0.9.1.jar">yeti-0.9.1.jar</a> and
 <a href="http://linux.ee/~mzz/yeti/0.9/yeti-lib-0.9.1.jar">yeti-lib-0.9.1.jar</a>).
+
 * Less/greater list/array cross-comparisions fixed.
 * Class-cast exception when constructing
   Java class closures of method-optimised function bindings fixed.
@@ -38,6 +40,7 @@ bugfix release
 You should probably still use the development snapshots to get latest
 bug fixes, unless you need that nothing changes.
 Main changes and bugfixes since last update:
+
 * Using relaxed value restriction (sometimes it's safe to allow
   application result to be polymorphic).
 * New yeti.lang.compiler.eval module replaces the old repl module.
@@ -62,6 +65,7 @@ Main changes and bugfixes since last update:
   and openTextUrl function is merged into yeti.lang.io module.
 
 4/2011. Bunch of bugfixes and some new features:
+
 * Faster structures and structure related bugfixes.
   The with operator allows extending existing structure object with additional
   fields and/or overriding fields in the original. This can be used among other
@@ -74,6 +78,7 @@ Main changes and bugfixes since last update:
 * Some work on yetidoc support in the compiler (not here yet, but closer).
 
 4/2010. Bugfixes, like always. New features:
+
 * Verify regex constants at compile time.
 * Thread-local variable support in standard library.
 * Invoking Yeti compiler from in-memory compiled Yeti code works now.
