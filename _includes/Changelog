@@ -1,3 +1,12 @@
+2/2012. <a href="https://github.com/mth/yeti/tree/v0.9.4">Version 0.9.4</a>
+
+* Support non-polymorphic typedef bindings using shared keyword,
+  for example: `typedef shared foo = 'a`
+* Try-catch literal closure optimisation bug fixed.
+* Tail recursion optimisation bug fixes.
+* Java char[] and boolean[] autoconversion fixes.
+* A bit more std documentation written.
+
 12/2011. <a href="https://github.com/mth/yeti/tree/v0.9.3">Version 0.9.3</a>
 bugfix release
 (<a href="http://linux.ee/~mzz/yeti/0.9/yeti-0.9.3.jar">yeti-0.9.3.jar</a> and
