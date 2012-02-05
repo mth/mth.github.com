@@ -1,4 +1,6 @@
 2/2012. <a href="https://github.com/mth/yeti/tree/v0.9.4">Version 0.9.4</a>
+(<a href="http://linux.ee/~mzz/yeti/0.9/yeti-0.9.4.jar">yeti-0.9.4.jar</a> and
+<a href="http://linux.ee/~mzz/yeti/0.9/yeti-lib-0.9.4.jar">yeti-lib-0.9.4.jar</a>).
 
 * Support non-polymorphic typedef bindings using shared keyword,
   for example: `typedef shared foo = 'a`
