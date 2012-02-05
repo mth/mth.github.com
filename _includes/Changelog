@@ -5,7 +5,7 @@
 * Try-catch literal closure optimisation bug fixed.
 * Tail recursion optimisation bug fixes.
 * Java char[] and boolean[] autoconversion fixes.
-* A bit more std documentation written.
+* A bit more std module documentation written.
 
 12/2011. <a href="https://github.com/mth/yeti/tree/v0.9.3">Version 0.9.3</a>
 bugfix release
