@@ -1,3 +1,16 @@
+4/2012.  <a href="https://github.com/mth/yeti/tree/v0.9.5">Version 0.9.5</a>
+bugfix release
+(<a href="http://linux.ee/~mzz/yeti/0.9/yeti-0.9.5.jar">yeti-0.9.5.jar</a> and
+<a href="http://linux.ee/~mzz/yeti/0.9/yeti-lib-0.9.5.jar">yeti-lib-0.9.5.jar</a>).
+
+* Fix partial application of `str*` family of `yeti.lang.std` module functions.
+* Disallow invalid `is {}` type declarations instead of giving confusing
+  compiler error.
+* Fix NullPointerException in finalizeStruct when raising type mismatch error.
+* Better error message on invalid declarations like `var x := 1`
+* Fix generating operator-functions documentation.
+* Some additional std module documentation.
+
 2/2012. <a href="https://github.com/mth/yeti/tree/v0.9.4">Version 0.9.4</a>
 released
 (<a href="http://linux.ee/~mzz/yeti/0.9/yeti-0.9.4.jar">yeti-0.9.4.jar</a> and
