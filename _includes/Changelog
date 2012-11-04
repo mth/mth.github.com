@@ -21,6 +21,7 @@
 * New `threadExit` function for terminating a thread.
 * Support grouping functions in YetiDoc using `Group:` name directive.
 * Some YetiDoc bugs fixed, including `var` structure field handling.
+* Parser fix for handling invalid typedef syntax.
 * Fixed typedefs sometimes wrongly handled as non-polymorphic.
 * Fixed handling of `undef_str` parameters in IO functions.
 * Fixed `as list<string>` and `as string` not converting null's to undef_str.
@@ -28,7 +29,6 @@
 * Allowed using static final class fields as constants in case patterns.
 * Workaround for case expression misbehaving on nested variants.
 * Fixed invalid code generation for pointless `deleteAll [1] []` call.
-* Parser fix for handling invalid typedef syntax.
 
 7/2012. <a href="https://github.com/mth/yeti/tree/v0.9.6">Version 0.9.6</a>
 released
