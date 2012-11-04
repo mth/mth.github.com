@@ -1,3 +1,34 @@
+7/2012. <a href="https://github.com/mth/yeti/tree/v0.9.7">Version 0.9.7</a>
+(<a href="http://linux.ee/~mzz/yeti/0.9/yeti-0.9.7.jar">yeti-0.9.7.jar</a> and
+<a href="http://linux.ee/~mzz/yeti/0.9/yeti-lib-0.9.7.jar">yeti-lib-0.9.7.jar</a>).
+
+* New yeti.xml module for parsing and generating XML (DOM style API,
+  internally uses
+  <a href="http://jcp.org/aboutJava/communityprocess/final/jsr173/index.html">Java
+  Streaming API for XML</a>).
+* The `as` and `unsafely_as` cast operators can be now used as functions.
+* New opaque types can be now defined using
+  `typedef opaque<parameters...> = type expression` and values can be
+  casted to opaque type using `as` cast.
+* Included <a href="https://github.com/mth/yeti/raw/master/util/jedit/yeti.xml">jEdit
+  mode</a> for Yeti syntax highlighting.
+* Added `runnable` function to `yeti.lang.io` for creating
+  `java.lang.Runnable` instances.
+* Structure field names can be escaped now like ````weird field name````.
+* Variant type tags are also shown.
+* YetiDoc now supports grouping functions (using Group: name directive).
+* Some YetiDoc bugs fixed, including var structure field handling.
+* Fixed typedefs sometimes wrongly handled as non-polymorphic.
+* Fixed handling of undef_str parameters in IO functions.
+* Fixed `as list<string>` and `as string` not converting null's to undef_str.
+* Implemented proper hashCode() for structs.
+* Allowed using static final class fields as constants in case patterns.
+* Workaround for case expression misbehaving on nested variants.
+* New threadExit function for terminating a thread.
+* Fixed invalid code generation for the pointless deleteAll [1] [].
+* Parser fix for handling invalid typedef syntax.
+* The yeti.lang.std module is now documented.
+
 7/2012. <a href="https://github.com/mth/yeti/tree/v0.9.6">Version 0.9.6</a>
 released
 (<a href="http://linux.ee/~mzz/yeti/0.9/yeti-0.9.6.jar">yeti-0.9.6.jar</a> and
