@@ -7,17 +7,19 @@
   internally uses
   <a href="http://jcp.org/aboutJava/communityprocess/final/jsr173/index.html">Java
   Streaming API for XML</a>).
-* The `as` and `unsafely_as` cast operators can be now used as functions.
-* New opaque types can be now defined using
-  `typedef opaque<parameters...> = type expression`. Values can be
-  casted to opaque type using `as` cast.
+* Allow using the `as` and `unsafely_as` cast operators as functions.
+* Opaque typedef support: `typedef opaque foo<parameters...> = type expression`
+  defines new opaque type foo. Values can be casted to opaque type using `as`
+  cast. This can be used to hide implementation types.
 * Included <a href="https://github.com/mth/yeti/raw/master/util/jedit/yeti.xml">jEdit
   mode</a> for Yeti syntax highlighting.
 * Added `runnable` function to `yeti.lang.io` module for creating
   `java.lang.Runnable` instances.
-* Structure field names can be escaped now like \`\``weird field name`\`\`.
-* Variant type tags are also shown.
-* YetiDoc now supports grouping functions using `Group:` name directive.
+* Structure field names can be escaped like \`\``weird field name`\`\`.
+* Variant type tags are also shown in error messages and generated
+  documentation.
+* New `threadExit` function for terminating a thread.
+* Support grouping functions in YetiDoc using `Group:` name directive.
 * Some YetiDoc bugs fixed, including `var` structure field handling.
 * Fixed typedefs sometimes wrongly handled as non-polymorphic.
 * Fixed handling of `undef_str` parameters in IO functions.
@@ -25,7 +27,6 @@
 * Implemented proper `hashCode()` for structs.
 * Allowed using static final class fields as constants in case patterns.
 * Workaround for case expression misbehaving on nested variants.
-* New `threadExit` function for terminating a thread.
 * Fixed invalid code generation for pointless `deleteAll [1] []` call.
 * Parser fix for handling invalid typedef syntax.
 
