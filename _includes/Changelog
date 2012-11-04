@@ -15,14 +15,14 @@
   mode</a> for Yeti syntax highlighting.
 * Added `runnable` function to `yeti.lang.io` module for creating
   `java.lang.Runnable` instances.
-* Structure field names can be escaped now like \`\`weird field name\`\`.
+* Structure field names can be escaped now like \`\``weird field name`\`\`.
 * Variant type tags are also shown.
 * YetiDoc now supports grouping functions using `Group:` name directive.
 * Some YetiDoc bugs fixed, including `var` structure field handling.
 * Fixed typedefs sometimes wrongly handled as non-polymorphic.
 * Fixed handling of `undef_str` parameters in IO functions.
 * Fixed `as list<string>` and `as string` not converting null's to undef_str.
-* Implemented proper hashCode() for structs.
+* Implemented proper `hashCode()` for structs.
 * Allowed using static final class fields as constants in case patterns.
 * Workaround for case expression misbehaving on nested variants.
 * New `threadExit` function for terminating a thread.
