@@ -17,8 +17,7 @@
   documentation.
 * Allow using static final class fields as constants in case patterns.
 * New functions: `threadExit` function for terminating a thread and
-  `runnable` function to `yeti.lang.io` module for creating
-  `java.lang.Runnable` instances.
+  `runnable` function for creating `java.lang.Runnable` instances.
 * Structure field names can be escaped like \`\``weird field name`\`\`.
 * Support grouping functions in YetiDoc using `Group:` name directive.
 * Some YetiDoc bugs fixed, including `var` structure field handling.
