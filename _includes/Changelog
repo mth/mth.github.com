@@ -16,8 +16,8 @@
 * Variant type tags are also shown in error messages and generated
   documentation.
 * Allow using static final class fields as constants in case patterns.
-* New functions: `threadExit` function for terminating a thread and
-  `runnable` function for creating `java.lang.Runnable` instances.
+* New functions: `threadExit` for terminating a thread and
+  `runnable` for creating `java.lang.Runnable` instances.
 * Structure field names can be escaped like \`\``weird field name`\`\`.
 * Support grouping functions in YetiDoc using `Group:` name directive.
 * Some YetiDoc bugs fixed, including `var` structure field handling.
