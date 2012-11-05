@@ -20,7 +20,7 @@ released
 * New functions: `threadExit` for terminating a thread and
   `runnable` for creating `java.lang.Runnable` instances.
 * Structure field names can be escaped like \`\``weird field name`\`\`.
-* Support grouping functions in YetiDoc using `Group:` name directive.
+* Support grouping functions in YetiDoc using `Group: name` directive.
 * Some YetiDoc bugs fixed, including `var` structure field handling.
 * Parser fix for handling invalid typedef syntax.
 * Fixed typedefs sometimes wrongly handled as non-polymorphic.
