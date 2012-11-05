@@ -28,7 +28,7 @@ released
 * Fixed `as list<string>` and `as string` not converting null's to undef_str.
 * Implemented proper `hashCode()` for structs.
 * Workaround for case expression misbehaving on nested variants.
-* Fixed invalid code generation for pointless `deleteAll [1] []` call.
+* Fixed an exception from pointless `deleteAll [1] []` call.
 
 7/2012. <a href="https://github.com/mth/yeti/tree/v0.9.6">Version 0.9.6</a>
 released
