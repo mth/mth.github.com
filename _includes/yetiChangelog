@@ -3,20 +3,20 @@ released
 (<a href="http://linux.ee/~mzz/yeti/0.9/yeti-0.9.8.jar">yeti-0.9.8.jar</a> and
 <a href="http://linux.ee/~mzz/yeti/0.9/yeti-lib-0.9.8.jar">yeti-lib-0.9.8.jar</a>).
 
-* Array/hash reference use simpler `table[key]` instead of the old `table.[key]`
-  syntax (old syntax gives deprecation warning now).
-* New stable module JVM ABI to have better backward compatibility in future
-  (uses static methods returning module fields instead of multiple different
-  ways to access used previously).
-* Rebuilds only modified dependencies when compiling.
-* Compiles modules required by load directly after parse, before type analyse
-  (to reduce memory use during compilation).
+* Array/hash references use simpler `table[key]` syntax instead of the old
+  `table.[key]` (old syntax gives deprecation warning now).
+* New stable module JVM ABI for better backward compatibility in future
+  (uses static methods for module fields instead of the multiple different
+  ways of access used previously).
+* Compiler now rebuilds only modified dependencies.
+* Modules required by load are compiled before type inference
+  to reduce memory use during compilation.
 * Documented all modules except `yeti.experimental.json`
 * Documentation for with, opaque typedefs and shared typedefs by Chrisichris.
 * Atomic references in standard library (`atomic` function).
 * The threadLocal function now takes initializer function instead of
   simple value as argument.
-* New generic fetchURL function for making http/ftp requests
+* New generic `fetchURL` function for making http/ftp requests
   in `yeti.lang.io` module.
 * Avoiding upper/lowercase dups on generated classes.
 * Skip code generation, when only doc generation is requested.
