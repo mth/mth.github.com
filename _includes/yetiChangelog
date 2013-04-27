@@ -18,7 +18,8 @@ released
   simple value as argument.
 * New generic `fetchURL` function for making http/ftp requests
   in `yeti.lang.io` module.
-* Deprecated `linesOfReader` and `openTextUrl` functions (`yeti.lang.io` module).
+* Deprecated `linesOfReader` and `openTextUrl` functions
+  in `yeti.lang.io` module.
 * Avoiding upper/lowercase dups on generated classes.
 * Skip code generation, when only doc generation is requested.
 * Use unique paths on module (re)compilation.
