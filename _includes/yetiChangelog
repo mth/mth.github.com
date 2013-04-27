@@ -20,7 +20,7 @@ released
   in `yeti.lang.io` module.
 * Deprecated `linesOfReader` and `openTextUrl` functions
   in `yeti.lang.io` module.
-* Avoiding upper/lowercase dups on generated classes.
+* Avoid upper/lowercase dups on generated classes.
 * Skip code generation, when only doc generation is requested.
 * Use unique paths on module (re)compilation.
 * Fixed full path script invocation (yeti /some/fubar/script.yeti).
