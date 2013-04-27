@@ -14,7 +14,7 @@ released
 * Documented all modules except `yeti.experimental.json`
 * Documentation for with, opaque typedefs and shared typedefs by Chrisichris.
 * Atomic references in standard library (`atomic` function).
-* The threadLocal function now takes initsializer function instead of
+* The threadLocal function now takes initializer function instead of
   simple value as argument.
 * New generic fetchURL function for making http/ftp requests
   in `yeti.lang.io` module.
