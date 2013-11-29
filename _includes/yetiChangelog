@@ -12,7 +12,7 @@ released
   having it as a field).
 * New `base64Encode`/`base64Decode` functions in `yeti.lang.std`.
 * Optimised handling of byte arrays wrapped using `as list<number>`.
-* The `binReadAll` and `binWriteFile` functions use now `list<number>`
+* The `binReadAll` and `binWriteFile` functions now use `list<number>`
   instead of `~byte[]`.
 * Byte arrays are now considered unsigned in Yeti.
 * Support source file and line number directives
