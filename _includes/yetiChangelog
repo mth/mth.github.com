@@ -36,7 +36,7 @@ released
 * Fix miscompilation of tail recursion in some cases.
 * Fix generation of var function references.
 * Fix `as ~double[]` and `as ~long[]` list to array conversions.
-* Don't complain on `[A x, A x]` case pattern.
+* Don't complain on `[A x, A y]` case pattern.
 * Various other bugfixes.
 
 04/2013. <a href="https://github.com/mth/yeti/tree/v0.9.8">Version 0.9.8</a>
