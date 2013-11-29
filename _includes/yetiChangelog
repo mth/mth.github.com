@@ -1,3 +1,44 @@
+11/2013. <a href="https://github.com/mth/yeti/tree/v0.9.9">Version 0.9.9</a>
+released
+(<a href="http://linux.ee/~mzz/yeti/0.9/yeti-0.9.9.jar">yeti-0.9.9.jar</a> and
+<a href="http://linux.ee/~mzz/yeti/0.9/yeti-lib-0.9.9.jar">yeti-lib-0.9.9.jar</a>).
+
+* Flexible typedefs.
+* Shared typedefs are not exported from modules, and can be unshared.
+* Binding value from `load` now also imports typedefs from that module,
+  prefixed with binding name and dot.
+* The previous `throw` operator is now a regular function.
+* Support source file and line number directives
+  (`//%FILE='filename'` and `//%:lineno`).
+* New structure-object reference operator `->` (works with any structure
+  having it as a field).
+* New `base64Encode`/`base64Decode` functions in `yeti.lang.std`.
+* Optimised handling of byte arrays wrapped using `as list<number>`.
+* The `binReadAll` and `binWriteFile` functions use now `list<number>`
+  instead of `~byte[]`.
+* Byte arrays are now considered unsigned in Yeti.
+* New module JVM ABI is now also used by inbuilt functions.
+* Prepared support for hidden fields in structures (which will be
+  ignored by equality check and pretty-printing).
+  This causes structure implementation to be incompatible
+  with earlier Yeti versions.
+* Build directory is now configurable.
+* ANT YetiTask compatibility with ant versions older than 1.7.
+* Compatibilitywith JDK 1.4 (don't use Integer#valueOf(int)).
+* Disallow broken and meaningless `x as primitive` casts.
+* Better error message when ';' is
+  accidentally used instead of ',' in structure.
+* Better error messages when module type is not fully defined.
+* Fix module polymorphism checking.
+* Fix too lenient struct polymorphism restrictions.
+* Fix leaking opaque type implementation when multiple modules are compiled.
+* Fix type variable tainting getting lost on some structure type copies.
+* Fix miscompilation of tail recursion in some cases.
+* Fix generation of var function references.
+* Fix `as ~double[]` and `as ~long[]` list to array conversions.
+* Don't complain on `[A x, A x]` case pattern.
+* Various other bugfixes.
+
 04/2013. <a href="https://github.com/mth/yeti/tree/v0.9.8">Version 0.9.8</a>
 released
 (<a href="http://linux.ee/~mzz/yeti/0.9/yeti-0.9.8.jar">yeti-0.9.8.jar</a> and
