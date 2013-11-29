@@ -8,8 +8,6 @@ released
 * Binding value from `load` now also imports typedefs from that module,
   prefixed with binding name and dot.
 * The previous `throw` operator is now a regular function.
-* Support source file and line number directives
-  (`//%FILE='filename'` and `//%:lineno`).
 * New structure-object reference operator `->` (works with any structure
   having it as a field).
 * New `base64Encode`/`base64Decode` functions in `yeti.lang.std`.
@@ -17,6 +15,8 @@ released
 * The `binReadAll` and `binWriteFile` functions use now `list<number>`
   instead of `~byte[]`.
 * Byte arrays are now considered unsigned in Yeti.
+* Support source file and line number directives
+  (`//%FILE='filename'` and `//%:lineno`).
 * New module JVM ABI is now also used by inbuilt functions.
 * Prepared support for hidden fields in structures (which will be
   ignored by equality check and pretty-printing).
