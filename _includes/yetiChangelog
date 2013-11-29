@@ -24,7 +24,7 @@ released
   with earlier Yeti versions.
 * Build directory is now configurable.
 * Ant YetiTask compatibility with Ant versions older than 1.7.
-* Compatibilitywith JDK 1.4 (don't use `Integer#valueOf(int)`).
+* Compatibility with JDK 1.4 (don't use `Integer#valueOf(int)`).
 * Disallow broken and meaningless `x as primitive` casts.
 * Better error message when ';' is
   accidentally used instead of ',' in structure.
