@@ -1,3 +1,22 @@
+10/2015. <a href="https://github.com/mth/yeti/tree/v0.9.9.1">Version 0.9.9.1</a>
+released
+(<a href="http://dot.planet.ee/yeti/0.9/yeti-0.9.9.1.jar">yeti-0.9.9.1.jar</a> and
+<a href="http://dot.planet.ee/yeti/0.9/yeti-lib-0.9.9.1.jar">yeti-lib-0.9.9.1.jar</a>).
+
+* JDK 1.8 support, upgraded bundled asm library to 5.0.3.
+* New non-experimental `yeti.json` module based on opaque types.
+* New hex and strOfInt functions for formatting non-base 10 integers
+* Yeti PEG grammar for documentation, can be compiled using  `ant grammar`.
+* Standard library documentation fixes.
+* Half of the <a href="https://github.com/mth/yeti/blob/master/doc/reference.rst">reference manual</a> is now written. :)
+* `sysExit` return type is now free type variable, as it shouldn't ever return.
+* `_argv` is now regular `yeti.lang.io` module property instead of inbuilt.
+* `randomInt` is now regular function instead of inbuilt.
+* Fix problem with merged class closure captures.
+* Fix ICE NullPointerException for `x = [[1]] as ~float[][]; map list x`.
+* Fix *number* to *~Long* casts (like `1 as ~Long`).
+* fall is now reserved keyword to be used in future in case expressions.
+
 11/2013. <a href="https://github.com/mth/yeti/tree/v0.9.9">Version 0.9.9</a>
 released
 (<a href="http://dot.planet.ee/yeti/0.9/yeti-0.9.9.jar">yeti-0.9.9.jar</a> and
