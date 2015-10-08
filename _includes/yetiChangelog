@@ -3,7 +3,7 @@ released
 (<a href="http://dot.planet.ee/yeti/0.9/yeti-0.9.9.1.jar">yeti-0.9.9.1.jar</a> and
 <a href="http://dot.planet.ee/yeti/0.9/yeti-lib-0.9.9.1.jar">yeti-lib-0.9.9.1.jar</a>).
 
-* JDK 1.8 support, upgraded bundled asm library to 5.0.3.
+* JDK8 support, upgraded bundled asm library to 5.0.3.
 * New non-experimental `yeti.json` module based on opaque types.
 * New hex and strOfInt functions for formatting non-base 10 integers
 * Yeti PEG grammar for documentation, can be compiled using  `ant grammar`.
