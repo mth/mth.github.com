@@ -1,5 +1,6 @@
 body {	font-family: sans-serif; background-color: white }
 .content{line-height: 1.4}
+p,ul {  max-width: 800px }
 code {	font-family: monospace}
 a {	color: #0000aa; text-decoration: none}
 a:hover{background-color: #DDD}
