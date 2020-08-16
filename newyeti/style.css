@@ -29,6 +29,6 @@ a:hover{background-color: #DDD}
 	font-size: 90%}
 pre {   background: #ffffc8;
         border: 1px solid black;
-        margin: 1ex 1.5em;
+        margin: 1ex 3em;
         padding: 0.6em 1em; overflow: auto}
 pre.hello {float: right}
