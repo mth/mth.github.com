@@ -1,4 +1,5 @@
 body {	font-family: sans-serif; background-color: white }
+.content{line-height: 1.4}
 code {	font-family: monospace}
 a {	color: #0000aa; text-decoration: none}
 a:hover{background-color: #DDD}
@@ -26,4 +27,8 @@ a:hover{background-color: #DDD}
 	margin: 3ex 1em;
 	background-color: #ccf;
 	font-size: 90%}
-.content{line-height: 1.4}
+pre {   background: #ffffc8;
+        border: 1px solid black;
+        margin: 1ex 1.5em;
+        padding: 0.6em 1em; overflow: auto}
+pre.hello {float: right}
