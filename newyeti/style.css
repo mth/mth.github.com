@@ -21,4 +21,8 @@ a:hover{background-color: #DDD}
 	vertical-align: bottom;
 	border-width: 0px 0px 3px}
 .menu span {float: right; text-align: right; font-size: 7pt}
-.content { line-height: 1.3 }
+.notice {padding: 1em 1.5em;
+	margin: 3ex 1em;
+	background-color: #ccf;
+	font-size: 90%}
+.content{line-height: 1.3}
