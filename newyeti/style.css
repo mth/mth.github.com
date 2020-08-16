@@ -2,6 +2,7 @@ body {	font-family: sans-serif; background-color: white }
 code {	font-family: monospace}
 a {	color: #0000aa; text-decoration: none}
 a:hover{background-color: #DDD}
+.menu a.l-about:hover{background-color: #DDD}
 .menu {	border-width: 0px 0px 1px;
 	border-style: solid;
 	margin: 10pt 0px 3ex;
