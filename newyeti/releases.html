@@ -1,0 +1,15 @@
+---
+layout: yeti
+name: l-releases
+title: YETI releases
+---
+<div class=notice>
+The core language and existing standard library API should be fairly
+stable.<br>
+The compiler development is now frozen to be bug-fix only
+(and writing documentation) until the 1.0 release.
+</div>
+{% capture changelog %}
+{% include yetiChangelog %}
+{% endcapture %}
+{{ changelog | markdownify }}

@@ -1,0 +1,65 @@
+---
+layout: yeti
+name: l-about
+title: YETI programming language
+---
+Yeti is
+<a href="http://en.wikipedia.org/wiki/ML_(programming_language)">ML style</a>
+functional programming language, that runs on the
+<a href="http://java.sun.com/docs/books/jvms/second_edition/html/VMSpecTOC.doc.html">JVM</a>.
+<ul><li>Library
+<a href="http://dot.planet.ee/yeti/docs/latest/">documentation</a>:
+<a href="http://dot.planet.ee/yeti/docs/latest/yeti.lang.std.html">std</a>,
+<a href="http://dot.planet.ee/yeti/docs/latest/yeti.lang.io.html">io</a>,
+<a href="http://dot.planet.ee/yeti/docs/latest/yeti.json.html">json</a>,
+<a href="http://dot.planet.ee/yeti/docs/latest/yeti.xml.html">xml</a>
+<li>Binary jar archive: <a href="http://dot.planet.ee/yeti/yeti.jar">yeti.jar</a><br>
+(occasionally updated and built from development snapshots).
+<li>Binary jar containing only Yeti standard library:
+<a href="http://dot.planet.ee/yeti/yeti-lib.jar">yeti-lib.jar</a>
+<li><a href="https://github.com/mth/yeti">Source</a> is available through git and svn (ant is needed for building):<br>
+<tt><b>git clone git://github.com/mth/yeti.git</b></tt><br>
+<tt><b>svn co http://svn.github.com/mth/yeti.git</b></tt><br>
+(BSD licensed)
+<li>Read the <a href="http://dot.planet.ee/yeti/intro.html">tutorial</a> (also available as
+<a href="http://dot.planet.ee/yeti/intro.pdf">PDF</a>).
+<li><a href="http://try-yeti.appspot.com/">Yeti code evaluator in web</a>
+<li>Vim <a href="https://github.com/mth/yeti/raw/master/util/syntax/yeti.vim">syntax hilighting</a> and <a href="https://github.com/mth/yeti/raw/master/util/ftplugin/yeti.vim">filetype plugin</a>.<br>
+Save these files as <tt>~/.vim/syntax/yeti.vim</tt> and
+<tt>~/.vim/ftplugin/yeti.vim</tt> accordingly, and add<br>
+<tt><b>au BufNewFile,BufRead *.yeti setlocal filetype=yeti ts=8 sw=4 sts=4 expandtab</b></tt><br>
+into your <tt>~/.vimrc</tt>.
+<li><a href="http://chrisichris.wordpress.com/2011/02/26/yeti-editor-support-in-vim-netbeans-and-notepad/">Netbeans and Notepad++ support.</a>
+<li><a href="https://github.com/mth/yeti/raw/master/util/syntax/yeti-mode.el">Emacs mode for Yeti</a>.
+<li><a href="https://github.com/mth/yeti/raw/master/util/jedit/yeti.xml">jEdit mode for Yeti</a>.
+<li>Help can be asked from the
+<a href="http://groups.google.com/group/yeti-lang">mailing list</a>.
+Please report any bugs you find.
+<li>Chrisichris has some interesting <a href="http://chrisichris.wordpress.com/category/yeti/">posts about Yeti</a>.
+<li><a href="https://github.com/chrisichris/yetiscript">YetiScript</a> is a JavaScript targeting dialect of the Yeti language.
+<li><a href="https://github.com/alandipert/boot-yeti">boot-yeti</a>, a <a href="http://boot-clj.com/">Boot</a> build task for Yeti development.
+</ul>
+The goal of the Yeti is to have a clean and minimal expressive language on the JVM that allows functional style programming, has static type inference and interfaces well with Java code.
+<p>
+Some of the features:
+<ul>
+<li>Type inference using the Hindley-Milner algorithm. The types are
+statically inferred at compile time without a need for explicit type
+declarations.
+<li>Polymorphic <a href="http://dot.planet.ee/yeti/intro.html#structures">structure</a> and
+<a href="http://dot.planet.ee/yeti/intro.html#variant-types">variant types</a>. Using those resembles
+duck typing from the dynamic languages - for example, when a value is used as
+a structure having a field foo, which gives string value, then any structure
+with string field foo will be good enough.
+<li><a href="http://dot.planet.ee/yeti/intro.html#accessors-and-mutators">Property fields</a> in structures (access goes through function calls).
+<li><a href="http://dot.planet.ee/yeti/intro.html#lazy-lists">Lazy lists</a>
+<li><a href="http://dot.planet.ee/yeti/intro.html#pattern-matching">Pattern matching on values</a>
+<li>Comfortable string regex support
+<li>Easy to <a href="http://dot.planet.ee/yeti/intro.html#using-java-classes-from-yeti-code">call existing Java code</a>
+<li>Interactive <a href="http://dot.planet.ee/yeti/intro.html#interactive-evaluation">REPL environment</a> for experimenting
+<li>Compiles directly to Java bytecode
+<li>Fast compilation and quite fast execution
+</ul>
+<hr>
+<p align="right"><img src="../any.gif" alt=":)">
+<br><small>(put yeti into subject)</small>

@@ -1,0 +1,24 @@
+body {	font-family: sans-serif; background-color: white }
+code {	font-family: monospace}
+a {	color: #0000aa; text-decoration: none}
+a:hover{background-color: #DDD}
+.menu {	border-width: 0px 0px 1px;
+	border-style: solid;
+	margin: 10pt 0px 3ex;
+	padding: 2px 0px}
+.menu a.l-about {background: linear-gradient(0deg,
+	transparent 8pt, #009 8pt,
+	#009 9pt, transparent 9pt,
+	transparent 11pt, #009 11pt,
+	#009 12pt, transparent 12pt,
+	transparent 14pt, #009 14pt,
+	#009 15pt, transparent 15pt);
+	font-size: 20pt; }
+.menu a {font-size: 16pt; font-weight:bold}
+.menu a,span{font-style: italic;
+	padding: 4pt 0.5em 0px;
+	margin: 0px;
+	vertical-align: bottom;
+	border-width: 0px 0px 3px}
+.menu span {float: right; text-align: right; font-size: 7pt}
+.content { line-height: 1.3 }
