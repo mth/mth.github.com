@@ -29,6 +29,10 @@ a:hover{background-color: #DDD}
 	margin: 3ex 1em;
 	background-color: #ccf;
 	font-size: 90%}
+p.foot {text-align: right;
+        border-style: solid;
+        border-width: 1px 0px 0px;
+        line-height: 1}
 pre {   background: #ffffc8;
         border: 1px solid black;
         margin: 1ex 3em;
