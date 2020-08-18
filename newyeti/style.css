@@ -1,7 +1,10 @@
 body {	font-family: sans-serif; background-color: white }
 .content{line-height: 1.4}
-p,ul {  max-width: 850px }
-h3,h4 { max-width: 870px }
+p,ul,h3,h4 {max-width: 850px}
+p.foot {text-align: right;
+        border-style: solid;
+        border-width: 1px 0px 0px;
+        line-height: 1}
 code {	font-family: monospace}
 a {	color: #0000aa; text-decoration: none}
 a:hover{background-color: #DDD}
@@ -29,10 +32,6 @@ a:hover{background-color: #DDD}
 	margin: 3ex 1em;
 	background-color: #ccf;
 	font-size: 90%}
-p.foot {text-align: right;
-        border-style: solid;
-        border-width: 1px 0px 0px;
-        line-height: 1}
 pre {   background: #ffffc8;
         border: 1px solid black;
         margin: 1ex 3em;
