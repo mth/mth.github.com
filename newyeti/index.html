@@ -15,10 +15,6 @@ println message;</pre>
 <a href="http://dot.planet.ee/yeti/docs/latest/yeti.lang.io.html">io</a>,
 <a href="http://dot.planet.ee/yeti/docs/latest/yeti.json.html">json</a>,
 <a href="http://dot.planet.ee/yeti/docs/latest/yeti.xml.html">xml</a>
-<li>Binary jar archive: <a href="http://dot.planet.ee/yeti/yeti.jar">yeti.jar</a><br>
-(occasionally updated and built from development snapshots).
-<li>Binary jar containing only Yeti standard library:
-<a href="http://dot.planet.ee/yeti/yeti-lib.jar">yeti-lib.jar</a>
 <li><a href="https://github.com/mth/yeti">Source</a> is available through git and svn (ant is needed for building):<br>
 <tt><b>git clone git://github.com/mth/yeti.git</b></tt><br>
 <tt><b>svn co http://svn.github.com/mth/yeti.git</b></tt><br>
@@ -33,7 +29,7 @@ Please report any bugs you find.
 <li><a href="https://github.com/chrisichris/yetiscript">YetiScript</a> is a JavaScript targeting dialect of the Yeti language.
 <li><a href="https://github.com/alandipert/boot-yeti">boot-yeti</a>, a <a href="http://boot-clj.com/">Boot</a> build task for Yeti development.
 </ul>
-<p>The goal of the Yeti is to have a clean and minimal expressive language on the JVM that allows functional style programming, has static type inference and interfaces well with Java code.
+<p>Yeti was created to have a clean and minimal expressive language on the JVM that allows functional style programming, has static type inference and interfaces well with Java code.
 <p>Some of the features:
 <ul>
 <li>Type inference using the Hindley-Milner algorithm. The types are
@@ -53,6 +49,29 @@ with string field foo will be good enough.
 <li>Compiles directly to Java bytecode
 <li>Fast compilation and quite fast execution
 </ul>
+Future.
+<p>
+Yeti shows that such static typesystem with row typing and full type inference
+can be very easy to use, while detecting many errors at compile time. Using
+Yeti feels quite like scripting language, and the error messages are usually
+easy to read (which wasn't trivial to achieve in the compiler). Compiling to
+JVM bytecode made implementation much easier (JVM has very good JIT), but
+unfortunately also has tied it to the JVM. The JVM is a big and often unwanted
+dependency, doesn't start very fast, and is today mostly used in environments,
+where Java is mandated. This leaves little room to non-Java JVM languages
+outside Android. Therefore the current implementation is for me an experiment
+that has successfully reached some goals, but a dead end otherwise.
+As it is occasionally useful tool, a maintanance (mostly bugfixes) will
+continue, but active development is not planned. It is also open source and
+anyone is free to fork it.
+</p><p>
+Given this I would suggest <a href="https://ocaml.org/">OCaml</a> and
+<a href="https://nim-lang.org/">Nim</a> to those seeking an powerful and easy
+to use modern languages.
+Those planning to create new programming languages might find some ideas from
+Yeti. It is also useful as REPL and for testing things on Java platform.
+
+</p>
 Editor syntax highlighting:
 <ul>
 <li>Vim <a href="https://github.com/mth/yeti/raw/master/util/syntax/yeti.vim">syntax hilighting</a> and <a href="https://github.com/mth/yeti/raw/master/util/ftplugin/yeti.vim">filetype plugin</a>.<br>
@@ -65,5 +84,5 @@ into your <tt>~/.vimrc</tt>.
 <li><a href="https://github.com/mth/yeti/raw/master/util/jedit/yeti.xml">jEdit mode for Yeti</a>.
 </ul>
 <hr>
-<p align="right" style="max-width: none"><img src="../any.gif" alt=":)">
-<br><small>(put yeti into subject)</small>
+<div style="float: right"><img src="../any.gif" alt=":)">
+<br><small>(put yeti into subject)</small></div>
