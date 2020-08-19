@@ -1,5 +1,8 @@
-body {	font-family: sans-serif; background-color: white }
-.content{line-height: 1.4; max-width: 860px; align: center}
+body {	font-family: sans-serif;
+	background-color: white;
+	max-width: 880px;
+	align:center}
+.content{line-height: 1.4}
 p.foot {text-align: right;
         border-style: solid;
         border-width: 1px 0px 0px;
@@ -33,7 +36,7 @@ a:hover{background-color: #DDD}
 	font-size: 90%}
 pre {   background: #ffffc8;
         border: 1px solid black;
-        margin: 1ex 3em;
+        margin: 1ex 2em;
         padding: 0.6em 1em; overflow: auto}
 pre.hello {float: right}
 h3,h4 { padding: 1px;
