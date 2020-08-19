@@ -1,3 +1,22 @@
+08/2020. <a href="https://github.com/mth/yeti/tree/v1.0">Version 1.0</a>
+released
+(<a href="http://dot.planet.ee/yeti/1.0/yeti-1.0.jar">yeti-1.0.jar</a> and
+<a href="http://dot.planet.ee/yeti/1.0/yeti-lib-1.0.jar">yeti-lib-1.0.jar</a>).
+
+* Yeti language is fully documented in the <a href="http://dot.planet.ee/yeti/reference.html">reference manual</a>.
+* JDK14 support, upgraded bundled asm library to 8.0.1.
+* Dropped Java 1.5 and older support (Java 1.6 or newer is now required).
+* Better JSON parser (written as state machine).
+* REPL catches exceptions that happen during pretty-printing values.
+* Use special BadMatch exception for case mismatches.
+* Build verifies downloaded asm library checksum.
+* Replaced CodeWriter interface with Yeti function (yeti.lang.Fun).
+* The shr operator now considers values to be unsigned.
+* Equals, hashCode() and toString() for tag constructor functions.
+* Fix find on byte lists.
+* Fix constant field reference from accessors.
+* Fix annotation parsing in Java source scanning.
+
 10/2015. <a href="https://github.com/mth/yeti/tree/v0.9.9.1">Version 0.9.9.1</a>
 released
 (<a href="http://dot.planet.ee/yeti/0.9/yeti-0.9.9.1.jar">yeti-0.9.9.1.jar</a> and
