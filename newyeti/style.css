@@ -2,7 +2,8 @@ body {	font-family: sans-serif;
 	background-color: white;
 	max-width: 880px;
 	margin: auto}
-.content{line-height: 1.4}
+.content{line-height: 1.4; margin: 1px}
+p {padding: 1px}
 p.foot {text-align: right;
         border-style: solid;
         border-width: 1px 0px 0px;
