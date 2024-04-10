@@ -5,7 +5,7 @@ released
 
 * Updated to currently latest ASM 9.7 to support newer JDKs (tested with JDK 17 and 23).
 * Java 1.8 is now oldest supported JDK version.
-* Added gradle build files that invoke the ANT build.xml - Yeti can be built now using gradle.
+* Added Gradle build files that invoke the ANT build.xml - Yeti can be built using gradle.
 * More Javadocs for the Java part of library.
 * Disallow duplicate hash literal keys.
 * New yeti.lang.compiler.Evaluator API for simpler embedding into Java application.
