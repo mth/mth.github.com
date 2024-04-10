@@ -8,7 +8,7 @@ released
 * Added Gradle build files that invoke the ANT build.xml - Yeti can be built using gradle.
 * More Javadocs for the Java part of library.
 * Disallow duplicate hash literal keys.
-* New yeti.lang.compiler.Evaluator API for simpler embedding into Java application.
+* New yeti.lang.compiler.Evaluator API for simpler embedding into Java applications.
 
 08/2020. <a href="https://github.com/mth/yeti/tree/v1.0">Version 1.0</a>
 released
