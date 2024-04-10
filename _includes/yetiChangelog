@@ -1,3 +1,14 @@
+04/2024. <a href="https://github.com/mth/yeti/tree/v1.1">Version 1.1</a>
+released
+(<a href="https://dot.planet.ee/yeti/1.1/yeti-1.1.jar">yeti-1.1.jar</a> and
+<a href="https://dot.planet.ee/yeti/1.1/yeti-lib-1.1.jar">yeti-lib-1.1.jar</a>).
+
+* Update to currently latest ASM 9.7 to support newer JDKs (tested with JDK 17, but it should work with newer ones also).
+* Added gradle build files that invoke the ANT build.xml - Yeti can be built now using gradle.
+* More Javadocs for the Java part of library.
+* Disallow duplicate hash literal keys.
+* New yeti.lang.compiler.Evaluator API for simpler embedding into Java application.
+
 08/2020. <a href="https://github.com/mth/yeti/tree/v1.0">Version 1.0</a>
 released
 (<a href="https://dot.planet.ee/yeti/1.0/yeti-1.0.jar">yeti-1.0.jar</a> and
