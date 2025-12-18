@@ -1,3 +1,10 @@
+12/2025. <a href="https://github.com/mth/yeti/tree/v1.2">Version 1.2</a>
+released
+(<a href="https://dot.planet.ee/yeti/1.2/yeti-1.2.jar">yeti-1.2.jar</a> and
+<a href="https://dot.planet.ee/yeti/1.2/yeti-lib-1.2.jar">yeti-lib-1.2.jar</a>).
+
+* Updated to currently latest ASM 9.9.1 to support newer JDKs (tested with JDK 21 and 25).
+
 04/2024. <a href="https://github.com/mth/yeti/tree/v1.1">Version 1.1</a>
 released
 (<a href="https://dot.planet.ee/yeti/1.1/yeti-1.1.jar">yeti-1.1.jar</a> and
